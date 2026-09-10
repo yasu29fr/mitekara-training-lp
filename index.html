@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ミテカラ 社内研修｜集めなくても、研修はきちんと回せます。</title>
+<meta name="description" content="新卒・中途・外国人実習生の研修を動画で。入社の時期がそろわなくても、勤務時間の空いたときにそれぞれのペースで受けられます。受講状況と理解度テストの記録は自動で残り、CSVで出力。動画の制作から丸ごとお任せいただけます。">
+<link rel="canonical" href="https://yasu29fr.github.io/mitekara-training-lp/">
+
+<!-- SNSでリンクを出したときに、画像とタイトルが出るようにする -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ミテカラ 社内研修">
+<meta property="og:title" content="ミテカラ 社内研修｜集めなくても、研修はきちんと回せます。">
+<meta property="og:description" content="新卒・中途・外国人実習生。入社の時期がそろわなくても、同じ研修をそれぞれのタイミングで。受講状況と理解度テストの記録が残ります。">
+<meta property="og:url" content="https://yasu29fr.github.io/mitekara-training-lp/">
+<meta property="og:image" content="https://yasu29fr.github.io/mitekara-training-lp/images/hero.jpg">
+<meta property="og:image:alt" content="スマホで研修動画を見る社員">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ミテカラ 社内研修｜集めなくても、研修はきちんと回せます。">
+<meta name="twitter:description" content="新卒・中途・外国人実習生。入社の時期がそろわなくても、同じ研修をそれぞれのタイミングで。">
+<meta name="twitter:image" content="https://yasu29fr.github.io/mitekara-training-lp/images/hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#1f5c4c; --green-deep:#143f34; --green-soft:#e9f1ee;
+  --gold:#b7791f; --gold-dark:#8f5d13; --gold-soft:#fbf3e2;
+  --ink:#141a26; --muted:#5f6878; --line:#e3e8f0; --bg:#f6f8fb; --white:#fff;
+  --shadow:0 20px 50px rgba(20,60,50,.10); --shadow-sm:0 6px 18px rgba(20,60,50,.07);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--ink);background:#fff;line-height:1.9;font-size:16px;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.en{font-family:Inter,"Noto Sans JP",sans-serif;letter-spacing:.12em}
+.container{width:min(1120px,calc(100% - 48px));margin:auto}
+.narrow{width:min(860px,calc(100% - 48px));margin:auto}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 6px 24px rgba(20,60,50,.08)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.02em}
+.logo-mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--green),#2e7c67);display:grid;place-items:center;color:#fff}
+.logo-mark svg{width:18px;height:18px}
+.logo small{display:block;font-size:10px;font-weight:700;color:var(--muted);letter-spacing:.14em;line-height:1.2}
+.nav-links{display:flex;gap:26px;font-size:14px;font-weight:700;color:#3a4356}
+.nav-links a:hover{color:var(--green)}
+.nav-right{display:flex;align-items:center;gap:10px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font-weight:800;font-size:15px;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:after{content:"";width:7px;height:7px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg);opacity:.85;transition:transform .2s}
+.btn:hover:after{transform:rotate(45deg) translate(2px,-2px)}
+.btn.no-arrow:after{display:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--gold);color:#fff;box-shadow:0 12px 28px rgba(183,121,31,.32)}
+.btn-primary:hover{background:var(--gold-dark)}
+.btn-outline{background:#fff;color:var(--green);border-color:var(--green)}
+.btn-outline:hover{background:var(--green-soft)}
+.btn-ghost{background:transparent;color:var(--green);border-color:rgba(255,255,255,.7);color:#fff}
+.btn-white{background:#fff;color:var(--green)}
+.btn-sm{min-height:44px;padding:0 20px;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#f3f6fc 0%,#fff 70%);padding:80px 0 110px}
+.hero:before{content:"";position:absolute;inset:auto -10% -30% auto;width:60vw;height:60vw;max-width:760px;max-height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(183,121,31,.13),transparent 70%);pointer-events:none}
+.hero:after{content:"";position:absolute;left:-90px;top:-60px;width:280px;height:280px;border-radius:50%;border:26px solid rgba(20,60,50,.06);pointer-events:none}
+.hero-visual:before{content:"";position:absolute;right:-46px;bottom:-38px;width:150px;height:150px;border-radius:34px;background:linear-gradient(135deg,rgba(183,121,31,.22),rgba(183,121,31,.06));transform:rotate(14deg);z-index:0}
+.hero-visual:after{content:"";position:absolute;left:-34px;top:-26px;width:74px;height:74px;border-radius:50%;background:rgba(45,86,196,.14);z-index:0}
+.hero-photo,.float-card{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;color:var(--green);background:#fff;border:1px solid #d6dff2;padding:6px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block}
+h1{font-size:clamp(34px,4.6vw,60px);line-height:1.28;letter-spacing:-.02em;margin:22px 0 18px;font-weight:900}
+h1 em{font-style:normal;color:var(--green);position:relative}
+h1 em:after{content:"";position:absolute;left:0;right:0;bottom:6px;height:12px;background:rgba(183,121,31,.28);z-index:-1;border-radius:4px}
+.lead{font-size:17px;color:#3e4759;max-width:600px;margin:0}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.hero-note{font-size:12px;color:var(--muted);margin-top:14px}
+.hero-mini{display:none}
+.hero-visual{position:relative}
+.hero-photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.3;background:linear-gradient(135deg,#1b3d94,#4a7bf0)}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.float-card{position:absolute;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:var(--shadow);border:1px solid var(--line);font-size:13px;line-height:1.5}
+.float-card b{display:block;font-size:20px;color:var(--green);font-family:Inter,sans-serif;letter-spacing:0}
+.float-card.a{left:-30px;bottom:52px}
+.float-card.b{right:-24px;top:34px}
+.float-card .live{display:inline-flex;align-items:center;gap:6px;color:#1d8a4b;font-weight:800;font-size:12px}
+.float-card .live i{width:8px;height:8px;border-radius:50%;background:#1d8a4b;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(29,138,75,.5)}70%{box-shadow:0 0 0 8px rgba(29,138,75,0)}}
+.stats-wrap{position:relative;z-index:2;margin-top:-70px;padding-bottom:20px}
+.stats{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:26px 28px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat small{display:block;font-size:12px;font-weight:700;color:var(--muted);letter-spacing:.06em}
+.stat strong{display:block;font-size:34px;line-height:1.2;color:var(--green);font-family:Inter,"Noto Sans JP",sans-serif;font-weight:800;margin-top:4px}
+.stat strong span{font-size:15px;font-family:"Noto Sans JP",sans-serif;font-weight:700;margin-left:2px}
+.stat p{margin:6px 0 0;font-size:12px;color:var(--muted);line-height:1.5}
+
+/* sections */
+section{padding:100px 0}
+.section-alt{background:var(--bg)}
+.kicker{display:block;font-family:Inter,"Noto Sans JP",sans-serif;font-size:clamp(38px,5.4vw,66px);line-height:1;color:var(--green-soft);font-weight:800;letter-spacing:.01em;margin:0 0 -14px;user-select:none;pointer-events:none}
+.section-head.center .kicker{text-align:center}
+.banner .kicker,.contact .kicker{color:rgba(255,255,255,.16)}
+.kicker+h2{position:relative;z-index:1}
+.section-alt .kicker{color:#e2e8f4}
+h2{font-size:clamp(26px,3.6vw,40px);line-height:1.4;margin:0 0 18px;letter-spacing:-.015em;font-weight:900}
+.section-lead{color:var(--muted);max-width:760px;margin:0}
+.section-head{margin-bottom:44px}
+.section-head.center{text-align:center}
+.section-head.center .section-lead{margin:auto}
+h3{font-weight:800}
+
+/* problem */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,#c7d3ee,#8aa2d8);aspect-ratio:4/3}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.photo:hover img{transform:scale(1.03)}
+.photo.tall{aspect-ratio:4/4.4}
+.checklist{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.checklist li{display:flex;gap:12px;align-items:flex-start;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;font-weight:600;font-size:15px;box-shadow:var(--shadow-sm)}
+.checklist li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--gold-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238f5d13' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/13px no-repeat;margin-top:5px}
+.callout{margin-top:24px;padding:22px 26px;border-radius:14px;background:var(--green-soft);border-left:5px solid var(--green);font-weight:700;color:var(--green);line-height:1.8}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 30px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-num{font-family:Inter,sans-serif;font-size:13px;font-weight:800;color:var(--gold);letter-spacing:.1em}
+.card h3{font-size:20px;margin:10px 0 10px;line-height:1.5}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.icon{width:52px;height:52px;border-radius:14px;background:var(--green-soft);display:grid;place-items:center;margin-bottom:18px}
+.icon svg{width:26px;height:26px;stroke:var(--green);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* videos */
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.video{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s}
+.video:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1f3f8f,#5f87e6);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,79,0) 40%,rgba(10,31,79,.55))}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;z-index:2;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.play:after{content:"";border-left:18px solid var(--green);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:4px}
+.dur{position:absolute;right:12px;bottom:12px;z-index:2;background:rgba(10,31,79,.85);color:#fff;font-family:Inter,sans-serif;font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px}
+.vtag{position:absolute;left:12px;top:12px;z-index:2;background:var(--gold);color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;letter-spacing:.08em}
+.video-body{padding:24px 26px 28px}
+.video-body h3{margin:0 0 8px;font-size:19px}
+.video-body p{margin:0;color:var(--muted);font-size:14px}
+.video-body .goal{margin-top:14px;font-size:13px;color:var(--green);background:var(--green-soft);padding:8px 12px;border-radius:8px;font-weight:700}
+.total-bar{margin-top:32px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--green);color:#fff;border-radius:16px;padding:22px 30px}
+.total-bar strong{font-size:26px;font-family:Inter,"Noto Sans JP",sans-serif}
+.total-bar strong span{font-size:14px;font-family:"Noto Sans JP",sans-serif;margin-left:4px}
+.total-bar p{margin:0;color:rgba(255,255,255,.8);font-size:14px}
+.bar{display:flex;gap:4px;flex:1;max-width:360px;height:14px}
+.bar i{height:100%;border-radius:4px;background:var(--gold)}
+.bar i:nth-child(1){flex:2}.bar i:nth-child(2){flex:3;opacity:.8}.bar i:nth-child(3){flex:3;opacity:.6}
+
+/* journey */
+.journey{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline:before{content:"";position:absolute;left:19px;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,var(--green),var(--gold))}
+.tl{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:8px 0}
+.tl-dot{width:40px;height:40px;border-radius:50%;background:#fff;border:2px solid var(--green);display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;color:var(--green);font-size:13px;position:relative;z-index:1}
+.tl-dot.sys{border-color:var(--gold);color:var(--gold-dark);border-style:dashed}
+.tl-box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow-sm)}
+.tl-box small{display:block;font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--muted)}
+.tl-box.sys small{color:var(--gold-dark)}
+.tl-box b{display:block;font-size:15px;margin-top:2px}
+.tl-box p{margin:4px 0 0;font-size:13px;color:var(--muted)}
+.tl-box.sys{background:var(--gold-soft);border-color:#ffd9ad}
+
+/* screenshot slots */
+.shot-card{padding:24px;scroll-margin-top:90px}
+.shot{margin-top:16px;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm);background:#fff}
+.shot img{display:block;width:100%}
+.shot.phone{width:220px;margin-left:auto;margin-right:auto;border-radius:18px}
+.shot-note{margin:8px 0 0;font-size:11px;color:var(--muted);text-align:center}
+
+/* banner */
+.banner{background:linear-gradient(120deg,var(--green-deep),#1d3f97 70%,#2a55c0);color:#fff;border-radius:28px;padding:64px 60px;position:relative;overflow:hidden}
+.banner:before{content:"";position:absolute;right:-120px;top:-120px;width:400px;height:400px;border-radius:50%;background:rgba(183,121,31,.22);filter:blur(10px)}
+.banner:after{content:"";position:absolute;left:-80px;bottom:-160px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.06)}
+.banner>*{position:relative;z-index:1}
+.banner .kicker{color:rgba(255,255,255,.14)}
+.banner h2{color:#fff;font-size:clamp(22px,2.5vw,30px)}
+.banner p{color:rgba(255,255,255,.82);max-width:720px}
+.banner .ctas{margin-top:28px}
+.banner-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.shot-frame{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.dash-shot{margin-top:40px}
+.dash-shot .shot-frame{box-shadow:var(--shadow);border:1px solid var(--line)}
+.shot-frame .fbar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#f1f4fa;border-bottom:1px solid #e3e8f0}
+.shot-frame .fbar i{width:9px;height:9px;flex:0 0 9px;border-radius:50%;background:#d5dbe7}
+.shot-frame .fbar i:first-child{background:#ff6b6b}.shot-frame .fbar i:nth-child(2){background:#ffc85c}.shot-frame .fbar i:nth-child(3){background:#5ad17b}
+.shot-frame .fbar span{margin-left:8px;font-size:11px;color:var(--muted);font-weight:700}
+.shot-frame img{display:block;width:100%}
+.banner-note{font-size:11px;color:rgba(255,255,255,.75)!important;margin:10px 0 0;text-align:center}
+
+/* tables */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow-sm)}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{padding:18px 22px;border-bottom:1px solid var(--line);text-align:left;font-size:15px;vertical-align:top}
+th{background:var(--bg);font-size:13px;font-weight:800;color:var(--muted);letter-spacing:.06em}
+tr:last-child td{border-bottom:0}
+td.ok{color:var(--green);font-weight:800}
+td.ok:before{content:"◎";color:var(--gold);margin-right:8px}
+td.ng{color:var(--muted)}
+td.ng:before{content:"△";color:#b0b7c4;margin-right:8px}
+.compare th:last-child,.compare td:last-child{background:#fbfcff}
+.pill{display:inline-block;font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.pill.o{background:var(--gold-soft);color:var(--gold-dark)}
+
+/* pricing */
+.price-hero{display:flex;align-items:center;gap:28px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 36px;box-shadow:var(--shadow-sm);margin-bottom:28px;flex-wrap:wrap}
+.price-hero .big{font-size:44px;font-weight:900;color:var(--green);line-height:1.1;font-family:Inter,"Noto Sans JP",sans-serif}
+.price-hero .big span{font-family:"Noto Sans JP",sans-serif;font-size:18px}
+.price-hero p{margin:0;color:var(--muted);font-size:14px;flex:1;min-width:260px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:22px;padding:34px 32px;background:#fff;position:relative;display:flex;flex-direction:column;box-shadow:var(--shadow-sm)}
+.plan.recommended{border:2px solid var(--gold);box-shadow:var(--shadow);transform:translateY(-8px)}
+.badge{position:absolute;left:50%;top:-16px;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:12px;font-weight:800;padding:6px 16px;border-radius:999px;letter-spacing:.1em;white-space:nowrap}
+.plan h3{font-size:22px;margin:0}
+.plan .tag{font-size:13px;color:var(--muted);margin-top:4px}
+.price{font-size:32px;font-weight:900;margin:18px 0 6px;color:var(--green);font-family:Inter,"Noto Sans JP",sans-serif}
+.price small{font-size:13px;font-weight:600;color:var(--muted);font-family:"Noto Sans JP",sans-serif;margin-left:4px}
+.plan ul{padding:0;margin:18px 0 26px;list-style:none;flex:1}
+.plan li{padding:8px 0 8px 28px;border-top:1px dashed var(--line);font-size:14px;position:relative}
+.plan li:before{content:"✓";position:absolute;left:4px;color:var(--gold);font-weight:900}
+.plan li.dim{color:#a3aab7}
+.plan li.dim:before{content:"–";color:#c9cfd9}
+.price-note{font-size:12px;color:var(--muted);margin-top:24px}
+.common{margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 32px;box-shadow:var(--shadow-sm)}
+.common h3{margin:0 0 16px;font-size:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.common h3 span{font-size:11px;padding:4px 10px;border-radius:999px;background:var(--green-soft);color:var(--green);letter-spacing:.08em}
+.common ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 28px}
+.common li{padding:10px 0 10px 26px;border-top:1px dashed var(--line);position:relative;font-size:14px}
+.common li:before{content:"✓";position:absolute;left:2px;color:var(--gold);font-weight:900}
+.common li b{display:block}
+.common li small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+@media(max-width:600px){.common ul{grid-template-columns:1fr}.common{padding:22px 20px}}
+.fee{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:18px 0 4px}
+.fee div{background:var(--bg);border-radius:10px;padding:10px 6px;text-align:center}
+.fee small{display:block;font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.02em}
+.fee b{display:block;font-size:15px;color:var(--green);font-family:Inter,"Noto Sans JP",sans-serif;font-weight:800;margin-top:2px;white-space:nowrap}
+.plan.recommended .fee div{background:var(--gold-soft)}
+
+/* prep */
+.prep{display:grid;grid-template-columns:1fr;gap:22px}
+.prep-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 32px;box-shadow:var(--shadow-sm)}
+.prep-box h3{margin:0 0 16px;font-size:18px;display:flex;align-items:center;gap:10px}
+.prep-box h3 span{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:800;letter-spacing:.08em}
+.prep-box.you h3 span{background:var(--gold-soft);color:var(--gold-dark)}
+.prep-box.us h3 span{background:var(--green-soft);color:var(--green)}
+.prep-box ul{margin:0;padding:0;list-style:none}
+.prep-box li{padding:10px 0 10px 28px;border-top:1px solid var(--line);font-size:14px;position:relative}
+.prep-box li:before{content:"";position:absolute;left:4px;top:18px;width:10px;height:10px;border-radius:50%}
+.prep-box.you li:before{background:var(--gold)}
+.prep-box.us li:before{background:var(--green)}
+
+/* admin */
+.admin{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.admin .card{padding:26px 24px}
+.admin .card h3{font-size:17px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 20px;box-shadow:var(--shadow-sm);position:relative}
+.step b{display:block;font-family:Inter,sans-serif;font-size:12px;color:var(--gold);letter-spacing:.14em;font-weight:800}
+.step strong{display:block;margin-top:6px;font-size:17px;line-height:1.5}
+.step p{font-size:13px;color:var(--muted);margin:8px 0 0}
+.step .when{display:inline-block;margin-top:12px;font-size:11px;font-weight:800;background:var(--green-soft);color:var(--green);padding:3px 10px;border-radius:999px}
+.step:not(:last-child):after{content:"";position:absolute;right:-12px;top:50%;width:10px;height:10px;border-top:2px solid #b7c2dc;border-right:2px solid #b7c2dc;transform:translateY(-50%) rotate(45deg)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0 24px;box-shadow:var(--shadow-sm)}
+.faq summary{cursor:pointer;font-weight:800;padding:20px 32px 20px 0;list-style:none;position:relative;font-size:15px;line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{content:"Q";color:var(--gold);font-family:Inter,sans-serif;font-weight:800;margin-right:10px}
+.faq summary:after{content:"";position:absolute;right:4px;top:26px;width:10px;height:10px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg);transition:transform .25s}
+.faq details[open] summary:after{transform:rotate(-135deg);top:30px}
+.faq p{color:var(--muted);margin:0 0 22px;font-size:14px;padding-left:24px;position:relative}
+.faq p:before{content:"A";position:absolute;left:0;color:var(--green);font-family:Inter,sans-serif;font-weight:800}
+
+/* cta band */
+.cta-band{background:linear-gradient(160deg,#f6faf8,#e9f1ee);text-align:center;padding:80px 0}
+.cta-band-eyebrow{display:flex;align-items:center;justify-content:center;gap:14px;font-size:15px;font-weight:800;color:var(--green);margin:0 0 14px}
+.cta-band-eyebrow span{font-size:22px;color:var(--gold);font-weight:400}
+.cta-band-title{font-size:clamp(24px,3.4vw,38px);line-height:1.45;margin:0 0 14px;letter-spacing:-.02em;font-weight:900}
+.cta-band-lead{color:var(--muted);margin:0}
+.cta-band .ctas{justify-content:center;margin-top:28px}
+
+/* contact */
+.contact{background:var(--green-deep);color:#fff;position:relative;overflow:hidden}
+.contact:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 0%,rgba(46,124,103,.55),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(183,121,31,.25),transparent 50%)}
+.contact .container{position:relative}
+.contact .kicker{color:rgba(255,255,255,.13)}
+.contact h2{color:#fff}
+.contact .section-lead{color:rgba(255,255,255,.75)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;margin-top:40px}
+.promise{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px}
+.promise li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,.9)}
+.promise li:before{content:"";flex:0 0 24px;height:24px;border-radius:50%;background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/13px no-repeat;margin-top:4px}
+.contact-photo{margin-top:30px;border-radius:16px;overflow:hidden;aspect-ratio:16/10;background:linear-gradient(135deg,#27448f,#4a72d6)}
+.contact-photo img{width:100%;height:100%;object-fit:cover}
+.contact-box{background:#fff;color:var(--ink);border-radius:22px;padding:36px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:13px;font-weight:800;display:block}
+label i{font-style:normal;color:var(--gold);margin-left:4px}
+input,textarea,select{width:100%;margin-top:7px;padding:13px 14px;border:1px solid #cfd6e3;border-radius:10px;font:inherit;font-size:15px;background:#fff;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 3px rgba(20,60,50,.12)}
+textarea{min-height:120px;resize:vertical}
+.full{grid-column:1/-1}
+.submit{width:100%;margin-top:22px;border:0}
+.form-note{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+.direct-lead{margin:0 0 18px;font-weight:700}
+.direct-item{display:flex;align-items:center;gap:16px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:var(--bg)}
+.direct-item small{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--gold-dark);min-width:44px}
+.direct-item b{font-size:20px;color:var(--green);word-break:break-all}
+.direct-item.tel{pointer-events:none}
+@media(max-width:768px){.direct-item.tel{pointer-events:auto}}
+.direct-form{display:block;text-align:center;padding:20px;border-radius:12px;margin:0 0 14px;background:var(--gold);color:#fff;font-weight:800;font-size:18px;box-shadow:var(--shadow-sm)}
+.direct-form:hover{background:var(--gold-dark)}
+.direct-form span{display:block;margin-top:6px;font-size:12px;font-weight:500;opacity:.92}
+.direct-or{margin:0 0 14px;font-size:13px;color:var(--muted);text-align:center}
+.direct-note{font-size:12px;color:var(--muted);margin:14px 0 0}
+
+footer{padding:56px 0 32px;font-size:13px;background:#0a1a40;color:rgba(255,255,255,.62)}
+footer .logo{color:#fff}
+.foot-top{display:grid;grid-template-columns:1.1fr 1.6fr;gap:48px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-desc{margin:16px 0 0;line-height:1.9;max-width:380px}
+.foot-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.foot-nav h3{font-size:12px;font-weight:800;letter-spacing:.1em;color:#fff;margin:0 0 12px}
+.foot-nav a{display:block;padding:5px 0;transition:color .2s}
+.foot-nav a:hover{color:#fff}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:22px;font-size:12px;color:rgba(255,255,255,.45)}
+@media(max-width:820px){.foot-top{grid-template-columns:1fr;gap:32px}}
+@media(max-width:600px){.foot-nav{grid-template-columns:1fr 1fr}}
+footer .logo-mark{background:rgba(255,255,255,.12)}
+
+/* trust strip */
+.trust{padding:36px 0 0}
+.trust p{text-align:center;font-size:14px;font-weight:800;color:var(--muted);letter-spacing:.08em;margin:0}
+.trust p b{color:var(--green)}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.logos span{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:13px;font-weight:700;color:#3a4356}
+.logos span:before{content:"";width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#dfe6f5,#c5d2f0)}
+.trust small{display:block;text-align:center;font-size:11px;color:#9aa3b2;margin-top:12px}
+
+/* reasons */
+.reason{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:44px 0}
+.reason+.reason{border-top:1px solid var(--line)}
+.reason.flip .reason-text{order:2}
+.reason .num{font-family:Inter,sans-serif;font-size:56px;font-weight:800;color:var(--green-soft);line-height:1;letter-spacing:0;-webkit-text-stroke:1.5px var(--green)}
+.reason h3{font-size:clamp(21px,2.3vw,27px);line-height:1.5;margin:10px 0 14px;letter-spacing:-.01em}
+.reason p{color:var(--muted);margin:0}
+.reason .sub{margin-top:22px}
+.reason .photo{aspect-ratio:5/4}
+
+/* 3-col compare */
+.c3 th,.c3 td{text-align:center}
+.c3 th:first-child,.c3 td:first-child{text-align:left}
+.c3 th.us,.c3 td.us{background:var(--gold-soft)}
+.c3 th.us{color:var(--gold-dark);font-size:14px}
+.mark{display:inline-block;font-size:22px;line-height:1;font-weight:900}
+.mark.a{color:var(--gold)}.mark.b{color:#8a94a6}.mark.c{color:#c5ccd8}
+.c3 td small{display:block;font-size:12px;color:var(--muted);margin-top:4px;line-height:1.5}
+
+/* support */
+.support{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.support .card{text-align:center;padding:30px 22px}
+.support .icon{margin:0 auto 16px;width:60px;height:60px;border-radius:50%;background:var(--gold-soft)}
+.support .icon svg{stroke:var(--gold-dark)}
+.support h3{font-size:17px;margin:0 0 8px}
+.support .opt{display:inline-block;font-size:10px;font-weight:800;color:var(--muted);border:1px solid var(--line);padding:1px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* sticky mobile cta */
+.mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mobile-cta .btn{width:100%}
+
+@media(max-width:980px){
+  .hero-grid,.split,.journey,.banner-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-grid{gap:36px}
+  .cards,.videos,.plans{grid-template-columns:1fr}
+  .plan.recommended{transform:none}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats-wrap{margin-top:-50px}
+  .hero{padding-bottom:80px}
+  .stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .admin{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .step:not(:last-child):after{display:none}
+  .faq,.prep{grid-template-columns:1fr}
+  .reason{grid-template-columns:1fr;gap:28px}
+  .reason.flip .reason-text{order:0}
+  .support{grid-template-columns:1fr 1fr}
+  .nav-links{display:none}
+  .banner{padding:44px 28px}
+  .float-card.a{left:8px;bottom:16px}.float-card.b{right:8px;top:12px}
+  section{padding:72px 0}
+  .hero{padding-top:52px}
+}
+@media(max-width:600px){
+  .container,.narrow{width:min(100% - 32px,1120px)}
+  .nav{height:62px}
+  .nav-right .btn{display:none}
+  .ctas .btn{width:100%}
+  .kicker{font-size:30px;margin-bottom:-4px;opacity:.85}
+  .cta-band{padding:56px 0}
+  .cta-band-eyebrow{font-size:14px}
+  .hero-visual{display:none}
+  .hero-mini{display:block;float:right;width:34%;aspect-ratio:1;object-fit:cover;border-radius:18px;margin:0 0 0 12px;box-shadow:var(--shadow)}
+  .hero-text .lead{clear:both}
+  .hero-text h1{margin-top:18px;font-size:30px;letter-spacing:-.04em;line-height:1.28}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:18px}.stat strong{font-size:26px}
+  .form-grid,.admin,.steps,.support{grid-template-columns:1fr}
+  .full{grid-column:auto}
+  .contact-box{padding:24px}
+  .total-bar{flex-direction:column;align-items:flex-start}
+  .bar{width:100%;max-width:none}
+  .mobile-cta{display:block}
+  body{padding-bottom:74px}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="container nav">
+    <a class="logo" href="#top">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="#fff" stroke="none"/></svg></span>
+      <span>ミテカラ<small>社内研修</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#problem">課題</a>
+      <a href="#videos">研修の作り方</a>
+      <a href="#system">仕組み</a>
+      <a href="#lang">多言語</a>
+      <a href="#price">料金</a>
+      <a href="#flow">導入の流れ</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-primary btn-sm" href="#contact">導入について相談する（無料）</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <img class="hero-mini" src="images/hero.jpg" alt="" aria-hidden="true">
+        <div class="eyebrow"><i></i>人事・研修ご担当者さま向け</div>
+        <h1>集めなくても、<br><em>研修はきちんと</em><br>回せます。</h1>
+        <p class="lead">入社の時期がそろわず、集合研修が組めない。同じ説明を、人が変わるたびに繰り返している。受けた記録は紙のまま。研修を動画にすれば、受講者は勤務時間の中で手が空いたときに、自分のペースで受けられます。誰がどこまで終えたかは、自動で残ります。</p>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#contact">導入について相談する（無料）</a>
+          <a class="btn btn-outline" href="#videos">研修の作り方をみる</a>
+        </div>
+        <div class="hero-note">資料はメールでお送りします。</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo">
+          <img src="images/hero.jpg" alt="研修動画を見る社員" loading="eager" onerror="this.style.display='none'">
+        </div>
+        <div class="float-card a"><span class="live"><i></i>受講できます</span><b>入社したその日から</b>次の集合研修を待たせません</div>
+        <div class="float-card b"><b>章 × レッスン</b>本数も順番も、研修に合わせて</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="stats-wrap">
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><small>動画の本数</small><strong>制限<span>なし</span></strong><p>章に分ければ、30本でも迷いません</p></div>
+      <div class="stat"><small>多言語字幕</small><strong>5<span>言語〜</span></strong><p>英語・ベトナム語・インドネシア語ほか</p></div>
+      <div class="stat"><small>対象</small><strong>3<span>つの入り方</span></strong><p>新卒・中途・外国人実習生</p></div>
+      <div class="stat"><small>記録</small><strong>CSV<span>で出力</span></strong><p>受講状況と、理解度テストの結果</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="container">
+    <p>新卒・中途・外国人実習生。<b>入社の時期がそろわなくても</b>、同じ研修を、それぞれのタイミングで</p>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="container">
+    <div class="split">
+      <div class="rv">
+        <span class="kicker en">PROBLEM</span>
+        <h2>集合研修の日程が、<br>入社のたびに壁になっていませんか。</h2>
+        <p class="section-lead">人が入るたびに同じ説明をし、集める日程を探し、受けた証拠を紙で残す。一つでも当てはまれば、動画配信に置き換えられます。</p>
+        <ul class="checklist" style="margin-top:28px">
+          <li>入社の時期がバラバラで、集合研修の日程が組めない</li>
+          <li>ベテランが同じ説明を毎回していて、現場の時間が削られている</li>
+          <li>誰が受けて誰が受けていないか、手元の名簿でしか分からない</li>
+          <li>雇入れ時教育や安全教育の記録を、紙やExcelで管理している</li>
+          <li>外国人材に日本語だけで説明していて、伝わったか自信がない</li>
+          <li>シフト制・夜勤があり、全員を同じ時間に集められない</li>
+        </ul>
+        <div class="callout">開催日をなくし、受講の記録を残す。これだけで、研修は「その日集まる行事」から、いつでも回せる「仕組み」に変わります。</div>
+      </div>
+      <div class="rv">
+        <div class="photo tall">
+          <img src="images/problem.jpg" alt="研修を受ける社員" loading="lazy" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section-alt" id="solution">
+  <div class="container">
+    <div class="section-head center rv">
+      <span class="kicker en">SOLUTION</span>
+      <h2>研修を「集めて開く」から、「いつでも受けてもらう」へ。<br>変わるのは、3つです。</h2>
+      <p class="section-lead">「ミテカラ 社内研修」なら、受講者は自分の空いた時間に受けられます。担当の方が毎回同じ説明をする必要も、出欠を追いかける必要もありません。</p>
+    </div>
+    <div class="cards">
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="card-num">01</div>
+        <h3>入社日を待たせない</h3>
+        <p>4月にまとめて集めなくても、入った人からその日に始められます。まとまった時間を取らなくても、手が空いたときに少しずつ。途中でやめても、次に開いたときは続きから再開できます。</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></svg></div>
+        <div class="card-num">02</div>
+        <h3>「見た」で終わらせず、「分かった」まで確かめられる</h3>
+        <p>レッスンごとの設問と、章末の理解度テストがあります。合格ラインは企業ごとに設定でき、通らなければ次に進めません。現場に出す前に、理解の度合いを揃えられます。</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h6l3-7 4 14 2-7h3"/></svg></div>
+        <div class="card-num">03</div>
+        <h3>受けた記録が、探さなくても残る</h3>
+        <p>誰が・いつ・どこまで見て・テストに何点で通ったかが、すべて記録されます。CSVで書き出せるので、雇入れ時教育や安全教育の記録としてそのまま保管できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">CURRICULUM</span>
+      <h2>章に分けて、順番にひらいていく。</h2>
+      <p class="section-lead">研修は「章」に分け、章の中に「レッスン（動画1本＋設問）」を並べます。章はどこから始めてもよく、章の中は上から順に。入社した人には第1章から、既存社員の年次教育には必要な章だけ、という割り当てができます。本数も順番も、あとから変えられます。</p>
+    </div>
+    <div class="videos">
+      <div class="video rv">
+        <div class="thumb">
+          <img src="images/video-01.jpg" alt="会社と仕事の研修動画" loading="lazy" onerror="this.style.display='none'">
+          <span class="vtag">第1章</span><span class="play"></span><span class="dur">3レッスン</span>
+        </div>
+        <div class="video-body">
+          <h3>会社と仕事を知る</h3>
+          <p>事業の内容、組織の形、自分の仕事がどこに位置するか。入社した人が最初に受ける章です。既存社員には割り当てなくて構いません。</p>
+          <div class="goal">章末テスト：なし（設問のみ）</div>
+        </div>
+      </div>
+      <div class="video rv">
+        <div class="thumb">
+          <img src="images/video-02.jpg" alt="安全教育の研修動画" loading="lazy" onerror="this.style.display='none'">
+          <span class="vtag">第2章</span><span class="play"></span><span class="dur">6レッスン</span>
+        </div>
+        <div class="video-body">
+          <h3>安全とルール</h3>
+          <p>保護具の使い方、危険の予知、報告・連絡の決まり。雇入れ時教育や年次の安全教育にあたる章です。全員に毎年割り当てます。</p>
+          <div class="goal">章末テスト：あり（合格ライン80点・何度でも再受験）</div>
+        </div>
+      </div>
+      <div class="video rv">
+        <div class="thumb">
+          <img src="images/video-03.jpg" alt="現場の手順を撮影した研修動画" loading="lazy" onerror="this.style.display='none'">
+          <span class="vtag">第3章</span><span class="play"></span><span class="dur">8レッスン</span>
+        </div>
+        <div class="video-body">
+          <h3>現場の手順</h3>
+          <p>機械の操作、作業の段取り、よくある失敗。手順書では伝わらない「手の動き」を動画で残します。配属先ごとに章を分けられます。</p>
+          <div class="goal">章末テスト：あり（配属前の確認に使えます）</div>
+        </div>
+      </div>
+    </div>
+    <div class="total-bar rv">
+      <div><strong>1本 3〜5<span>分</span></strong><p>長い動画は最後まで見られません。1つの手順につき1本、3〜5分に区切ります。本数が増えても原価はほとんど変わらないので、まとめずに分けたほうが、あとから直すのも楽になります。</p></div>
+      <div class="bar"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- REASONS -->
+<section id="reasons" style="padding-top:60px">
+  <div class="container">
+    <div class="section-head center rv">
+      <span class="kicker en">WHY US</span>
+      <h2>ミテカラ 社内研修が、選ばれる理由。</h2>
+      <p class="section-lead">「動画を共有フォルダに置いておく」のとは違います。最後まで見てもらい、分かったかを確かめ、その記録が残る。この3つを、仕組みとして持っています。</p>
+    </div>
+    <div class="reason rv">
+      <div class="reason-text">
+        <div class="num">01</div>
+        <h3>動画を作るところから、丸ごとお任せいただけます。</h3>
+        <p>ここがいちばんの違いです。多くの研修システムは「箱」だけを貸します。当社は撮影も編集もできるので、手順書しかない状態からでも始められます。構成台本の作成、現場での撮影、テロップと図解までを引き受けるので、ベテランの方は「いつもの作業をしながら説明する」だけです。</p>
+        <div class="sub"><a class="btn btn-outline btn-sm" href="#novideo">動画がない場合の始め方を見る</a></div>
+      </div>
+      <div class="photo"><img src="images/reason-01.jpg" alt="研修動画の撮影の打ち合わせ" loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+    <div class="reason flip rv">
+      <div class="reason-text">
+        <div class="num">02</div>
+        <h3>飛ばし見も、受けたふりもできない設計。</h3>
+        <p>実際に再生された秒数を記録しているので、早送りで飛ばすと完了になりません。見終わると設問が現れ、章の最後には理解度テストがあります。合格しなければ次の章の完了になりません。7日以上進んでいない方には、管理画面から督促のメールをまとめて送れます。</p>
+        <div class="sub"><a class="btn btn-outline btn-sm" href="#system">受講者の動きと仕組みを見る</a></div>
+      </div>
+      <div class="photo"><img src="images/reason-02.jpg" alt="スマートフォンで研修を受ける社員" loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+    <div class="reason rv">
+      <div class="reason-text">
+        <div class="num">03</div>
+        <h3>「受けさせた」ことを、記録として残せる。</h3>
+        <p>集合研修の記録は、出席簿のサインだけになりがちです。動画配信なら、誰が・いつ・どの章まで終えて・テストに何点で合格したかが自動で残ります。CSVで書き出せるので、雇入れ時教育や年次の安全教育の記録として、そのまま保管・提出できます。</p>
+        <div class="sub"><a class="btn btn-outline btn-sm" href="#recruiter">受講状況の画面を見る</a></div>
+      </div>
+      <div class="photo"><img src="images/reason-03.jpg" alt="受講状況を確認する研修担当者" loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SYSTEM / JOURNEY -->
+<section class="section-alt" id="system">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">HOW IT WORKS</span>
+      <h2>受講者が動くと、システムが動く。</h2>
+      <p class="section-lead">「名簿に入れる → 見る → 答える → テストを受ける」。受講者の行動ひとつひとつに、システムが自動で反応します。担当の方の手作業は、名簿を入れることと、進んでいない人に声をかけることだけです。</p>
+    </div>
+    <div class="journey">
+      <ul class="timeline rv">
+        <li class="tl"><div class="tl-dot">1</div><div class="tl-box"><small>ご担当者の操作</small><b>受講者の名簿を登録し、コースを割り当てる</b><p>CSVでまとめて、または1人ずつ。新しく入った方はその都度追加できます。</p></div></li>
+        <li class="tl"><div class="tl-dot sys">S</div><div class="tl-box sys"><small>システム</small><b>受講のご案内メールを自動で送信</b><p>会社のメールをお持ちでない方には、社員番号と初期パスワードを発行できます。</p></div></li>
+        <li class="tl"><div class="tl-dot">2</div><div class="tl-box"><small>受講者の行動</small><b>章の中のレッスンを、上から順に視聴</b><p>スマホでもPCでも。途中で止めても、次に開いたときは続きから再開できます。</p></div></li>
+        <li class="tl"><div class="tl-dot sys">S</div><div class="tl-box sys"><small>システム</small><b>視聴の進み方を記録し、見終わったら設問を表示</b><p>実際に再生された秒数を記録しているので、早送りで飛ばすと完了になりません。</p></div></li>
+        <li class="tl"><div class="tl-dot">3</div><div class="tl-box"><small>受講者の行動</small><b>設問に答え、章の最後に理解度テストを受ける</b><p>合格ラインは企業ごとに設定できます（初期値80点）。落ちても何度でも受け直せます。</p></div></li>
+        <li class="tl"><div class="tl-dot sys">S</div><div class="tl-box sys"><small>システム</small><b>採点し、合格なら次の章へ。点数と合格日を記録</b><p>採点はサーバー側で行うため、正解が受講者の画面に出ることはありません。</p></div></li>
+        <li class="tl"><div class="tl-dot">4</div><div class="tl-box"><small>ご担当者の操作</small><b>受講状況を見て、進んでいない方に督促を送る</b></div></li>
+        <li class="tl"><div class="tl-dot sys">S</div><div class="tl-box sys"><small>システム</small><b>手を打つべき方から順に並べ、選んだ方にまとめてメール</b><p>修了した方には送りません。全員ぶんの記録はCSVで書き出せます。</p></div></li>
+      </ul>
+      <div class="rv">
+        <div class="photo">
+          <img src="images/system.jpg" alt="ノートパソコンで研修動画を見る社員" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="cards" style="grid-template-columns:1fr;gap:14px;margin-top:14px">
+          <div class="card shot-card" id="student"><div class="card-num">LEARNER</div><h3 style="font-size:16px">スマホでも、PCでも</h3><p>アプリ不要。現場のスマホでも、事務所のPCでも。続きから再開できます。</p><div class="shot phone"><img src="images/screen-student.png" alt="受講者が見る受講状況の画面" loading="lazy"></div><p class="shot-note">※表示データはサンプルです</p></div>
+          <div class="card shot-card" id="recruiter"><div class="card-num">ADMIN</div><h3 style="font-size:16px">手作業は名簿の登録だけ</h3><p>記録・採点・集計はすべて自動。管理画面で進み具合を見るだけ。</p><div class="shot"><img src="images/screen-recruiter.jpg" alt="研修担当者が見る受講状況の一覧" loading="lazy"></div><p class="shot-note">※表示データはサンプルです</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER -->
+<section style="padding-top:0" class="section-alt">
+  <div class="container">
+    <div class="banner rv">
+      <div class="banner-grid">
+        <div>
+          <span class="kicker en">DOWNLOAD</span>
+          <h2><span style="display:inline-block">画面イメージと料金の考え方を、</span><span style="display:inline-block">資料にまとめています。</span></h2>
+          <p>受講者が見る画面、担当者が見る受講状況、料金の考え方、導入までのスケジュール。このページの内容を、社内で共有しやすい形にまとめました。</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="#contact">導入について相談する（無料）</a>
+          </div>
+        </div>
+        <div class="banner-shot">
+          <div class="shot-frame"><div class="fbar"><i></i><i></i><i></i><span>研修担当者が見る受講状況の画面</span></div><img src="images/screen-dashboard.jpg" alt="研修担当者が見る受講状況の画面" loading="lazy"></div>
+          <p class="banner-note">※表示データはサンプルです</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="compare">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">COMPARISON</span>
+      <h2>集合研修とも、汎用のeラーニングとも違う。</h2>
+      <p class="section-lead">集合研修の「伝わる力」と、eラーニングの「いつでも受けられる手軽さ」を両立します。いちばんの違いは、<b>教材そのものを当社が作れる</b>ことです。</p>
+    </div>
+    <div class="table-wrap rv">
+      <table class="c3">
+        <thead><tr><th style="width:22%"></th><th>集合研修</th><th>汎用の<br>eラーニング</th><th class="us">ミテカラ<br>社内研修</th></tr></thead>
+        <tbody>
+          <tr><td><b>受けるタイミング</b></td><td><span class="mark c">△</span><small>開催日時に全員そろえる</small></td><td><span class="mark a">◎</span><small>本人の都合で</small></td><td class="us"><span class="mark a">◎</span><small>手が空いたときに、続きから</small></td></tr>
+          <tr><td><b>新卒・中途・実習生の混在</b></td><td><span class="mark c">△</span><small>層ごとに別日程を組む</small></td><td><span class="mark b">○</span><small>講座を分けて割り当て</small></td><td class="us"><span class="mark a">◎</span><small>章ごとに、必要な人にだけ</small></td></tr>
+          <tr><td><b>教材の用意</b></td><td><span class="mark b">○</span><small>資料と講師を社内で</small></td><td><span class="mark c">△</span><small>既製の講座か、自社で作る</small></td><td class="us"><span class="mark a">◎</span><small>撮影・編集から当社が作る</small></td></tr>
+          <tr><td><b>自社の手順を教えられるか</b></td><td><span class="mark a">◎</span><small>現場で直接</small></td><td><span class="mark c">△</span><small>既製講座は一般論</small></td><td class="us"><span class="mark a">◎</span><small>自社の現場を撮って教材に</small></td></tr>
+          <tr><td><b>最後まで見てもらえるか</b></td><td><span class="mark b">○</span><small>その場にいる</small></td><td><span class="mark c">△</span><small>再生したまま放置できる</small></td><td class="us"><span class="mark a">◎</span><small>実再生の秒数で判定・飛ばし見不可</small></td></tr>
+          <tr><td><b>理解度の確認</b></td><td><span class="mark c">△</span><small>その場の質疑のみ</small></td><td><span class="mark b">○</span><small>テスト機能あり</small></td><td class="us"><span class="mark a">◎</span><small>章末テスト・合格まで次に進めない</small></td></tr>
+          <tr><td><b>受けた記録</b></td><td><span class="mark c">△</span><small>出席簿のサイン</small></td><td><span class="mark b">○</span><small>システム内に記録</small></td><td class="us"><span class="mark a">◎</span><small>章ごとの完了日・点数をCSVで</small></td></tr>
+          <tr><td><b>外国人材への対応</b></td><td><span class="mark c">△</span><small>通訳の手配が必要</small></td><td><span class="mark c">△</span><small>日本語の講座が中心</small></td><td class="us"><span class="mark a">◎</span><small>多言語字幕。同じ動画で切替</small></td></tr>
+          <tr><td><b>内容の更新</b></td><td><span class="mark b">○</span><small>話す内容を変えるだけ</small></td><td><span class="mark b">○</span><small>差し替え可</small></td><td class="us"><span class="mark b">○</span><small>文言は自分で、動画は依頼</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section-alt" id="price">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">PRICE</span>
+      <h2>システムの機能は同じ。<br>違うのは、動画をどこまで作るかだけ。</h2>
+      <p class="section-lead">受講画面・設問・理解度テスト・受講状況・CSV出力は、どのプランでも同じものをお使いいただけます。プランの違いは「動画を誰が作るか」です。動画の本数に上限は設けていません。</p>
+    </div>
+    <!-- TODO: 金額が決まったら、下の「要相談」を数字に差し替える（基本料／1人あたり／最低人数） -->
+    <div class="price-hero rv">
+      <div class="big">月額<span>＋ 受講者数</span></div>
+      <p>月々の料金は、<b>基本料</b>と<b>登録した受講者の人数</b>で決まります。使わなくなった方を名簿から外せば、その月から人数に数えません。新しく入った方はその都度追加できます。動画の本数・章の数・多言語字幕の言語数は、月額に影響しません。初期費用は、動画をどこまで作るかによって変わります。</p>
+    </div>
+    <div class="plans">
+      <div class="plan rv">
+        <h3>持ち込み</h3>
+        <div class="price">要相談<small>初期費用＋月額（基本料＋人数）</small></div>
+        <ul>
+          <li>お手元の動画をそのまま使う</li>
+          <li>章立て・順番の設計をお手伝い</li>
+          <li>アップロードと初期設定は当社が実施</li>
+          <li>設問・理解度テストの作成</li>
+          <li>撮影なし。最短で始められます</li>
+        </ul>
+        <a class="btn btn-outline" href="#contact">資料で詳細を見る</a>
+      </div>
+      <div class="plan recommended rv">
+        <div class="badge">おすすめ</div>
+        <h3>一部制作</h3>
+        <div class="price">要相談<small>初期費用＋月額（基本料＋人数）</small></div>
+        <ul>
+          <li>足りない分だけ撮影・編集</li>
+          <li>既存の動画・写真・手順書を活用</li>
+          <li>構成台本の作成</li>
+          <li>テロップ・図解</li>
+          <li>設問・理解度テストの作成</li>
+        </ul>
+        <a class="btn btn-primary" href="#contact">導入について相談する（無料）</a>
+      </div>
+      <div class="plan rv">
+        <h3>まるごと制作</h3>
+        <div class="price">要相談<small>初期費用＋月額（基本料＋人数）</small></div>
+        <ul>
+          <li>手順書しかない状態から設計</li>
+          <li>章立ての企画・構成・台本</li>
+          <li>現場での撮影（複数日）</li>
+          <li>ナレーション収録</li>
+          <li>テロップ・図解・インフォグラフィック</li>
+          <li>設問・理解度テストの作成</li>
+        </ul>
+        <a class="btn btn-outline" href="#contact">資料で詳細を見る</a>
+      </div>
+    </div>
+    <div class="common rv">
+      <h3><span>全プラン共通</span>初期費用に含まれるもの</h3>
+      <ul>
+        <li><b>専用環境の構築</b><small>サーバー、データベース、動画配信、メール送信</small></li>
+        <li><b>章立て・カリキュラムの設計</b><small>いまの研修の流れを伺って組み立てます</small></li>
+        <li><b>設問と理解度テストの作成</b><small>合格ラインの設定もあわせて</small></li>
+        <li><b>会社名・ロゴ・配色・背景画像の設定</b></li>
+        <li><b>受講者名簿の初回登録</b><small>CSVでお預かりします</small></li>
+        <li><b>ご担当者への操作レクチャー</b><small>担当が代わったときは再受講できます</small></li>
+      </ul>
+    </div>
+    <div class="common rv">
+      <h3><span>オプション</span>外国人材向けの多言語字幕</h3>
+      <ul>
+        <li><b>多言語字幕の追加</b><small>日本語字幕に加え、動画1本・1言語につき30,000円（AI翻訳）。英語・ベトナム語・インドネシア語・ネパール語・ミャンマー語などに対応。同じ動画のまま、受講者が言語を切り替えます</small></li>
+        <li><b>母語話者によるチェック</b><small>別途お見積り。<b>安全教育・機械の操作手順・法令に関わる内容には、必ずこちらをおすすめしています</b></small></li>
+        <li><b>デザイン字幕（テロップ）</b><small>別途お見積り</small></li>
+      </ul>
+    </div>
+    <p class="price-note">※料金はすべて税別です。</p>
+  </div>
+</section>
+
+<!-- PREP -->
+<section id="prep">
+  <div class="container">
+    <div class="split">
+      <div class="rv">
+        <div class="photo">
+          <img src="images/prep.jpg" alt="現場での撮影の風景" loading="lazy" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="rv">
+        <span class="kicker en">PREPARATION</span>
+        <h2>ご準備いただくのは、<br>受講者の名簿と、撮影日だけ。</h2>
+        <p class="section-lead">章立ての設計、台本、撮影、編集、システムの設定は、すべてこちらで行います。ご担当者さまの作業は、社内の調整だけです。</p>
+        <div class="prep" style="margin-top:28px">
+          <div class="prep-box you">
+            <h3><span>貴社</span>ご準備いただくもの</h3>
+            <ul>
+              <li>受講者の名簿（氏名とメール、または社員番号）</li>
+              <li>いま研修で使っている手順書・資料</li>
+              <li>撮影日の確保（制作を伴う場合）</li>
+              <li>説明する役の方（ベテランで構いません）</li>
+              <li>撮影できる場所（現場そのままで結構です）</li>
+              <li>ロゴデータ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN -->
+<section class="section-alt" id="admin">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">DASHBOARD</span>
+      <h2>研修ご担当者が見る画面。</h2>
+      <p class="section-lead">見るのは「誰が・どこまで終えて・どこで止まっているか」の一覧だけ。手を打つべき方から順に並ぶので、誰に声をかけるか迷いません。</p>
+    </div>
+    <div class="admin">
+      <div class="card rv"><div class="card-num">01</div><h3>受講状況の一覧</h3><p>誰が・どの章まで終えて・いま何で止まっているかをひと目で。「7日以上とまっている方」だけを絞り込んで、まとめて督促を送れます。</p></div>
+      <div class="card rv"><div class="card-num">02</div><h3>理解度テストの結果</h3><p>章ごとの合格・不合格と点数が残ります。合格ラインは企業ごとに設定でき、落ちても何度でも受け直せます。採点はサーバー側で行います。</p></div>
+      <div class="card rv"><div class="card-num">03</div><h3>受講記録のCSV出力</h3><p>章ごとの完了日とテストの点数を、絞り込んだ状態のまま書き出せます。雇入れ時教育や年次の安全教育の記録として、そのまま保管できます。</p></div>
+      <div class="card rv"><div class="card-num">04</div><h3>カリキュラムの編集</h3><p>章とレッスンの追加・並べ替え・公開／非公開、設問と理解度テストの作成、会社名・ロゴ・配色の変更は、管理画面から行えます。</p></div>
+    </div>
+    <div class="dash-shot rv">
+      <div class="shot-frame"><div class="fbar"><i></i><i></i><i></i><span>admin / 受講状況</span></div><img src="images/screen-dashboard.jpg" alt="研修担当者が見る受講状況の画面。対象者・修了・受講中・未着手の集計と一覧" loading="lazy"></div>
+      <p class="shot-note">※表示データはサンプルです。配色は初期設定のもので、管理画面から6色に変更できます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- NO VIDEO -->
+<section id="novideo">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">START FROM ZERO</span>
+      <h2>手順書しかない状態から、始められる。</h2>
+      <p class="section-lead">「教材と呼べるものが何もない」という状態が、むしろ普通です。いまお手元にあるものに合わせて、始め方をご提案します。</p>
+    </div>
+    <div class="table-wrap rv">
+      <table>
+        <thead><tr><th style="width:30%">いまの状態</th><th>始め方</th><th style="width:22%">向いているプラン</th></tr></thead>
+        <tbody>
+          <tr><td><b>教材は口伝えだけ</b></td><td>ベテランの方に普段どおり作業してもらい、その手元を撮ります。話す内容は当日こちらが引き出すので、台本を覚える必要はありません。</td><td><span class="pill o">まるごと制作</span></td></tr>
+          <tr><td><b>紙の手順書・マニュアルがある</b></td><td>手順書を章立てに置き換え、足りない部分だけ撮影します。文字で伝わりにくかった「手の動き」だけを動画にする、という組み方ができます。</td><td><span class="pill o">一部制作</span></td></tr>
+          <tr><td><b>過去に撮った動画がある</b></td><td>お手元の動画をそのまま使います。章立てと設問だけ組めば、撮影なしで始められます。長い動画は分割してお預かりすることもできます。</td><td><span class="pill">持ち込み</span></td></tr>
+          <tr><td><b>外国人材に見せたい</b></td><td>まず日本語で作り、字幕を多言語で載せます。動画は1本のまま、受講者が言語を切り替えます。安全教育は母語話者のチェックをおすすめします。</td><td><span class="pill">＋ 多言語オプション</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- MULTILINGUAL -->
+<section class="section-alt" id="lang">
+  <div class="container">
+    <div class="section-head center rv">
+      <span class="kicker en">MULTILINGUAL</span>
+      <h2>同じ動画のまま、母語で受けてもらえる。</h2>
+      <p class="section-lead">技能実習生・特定技能の方に、通訳を手配して同じ説明を繰り返していませんか。日本語で作った動画に字幕トラックを足すだけなので、<b>言語を増やしても動画の本数は増えません</b>。受講者は再生画面で言語を切り替えるだけです。</p>
+    </div>
+    <div class="cards">
+      <div class="card rv">
+        <div class="card-num">01</div>
+        <h3>対応言語</h3>
+        <p>英語、ベトナム語、インドネシア語、ネパール語、ミャンマー語などに対応します。他の言語もご相談ください。日本語字幕は標準で付きます。</p>
+      </div>
+      <div class="card rv">
+        <div class="card-num">02</div>
+        <h3>費用</h3>
+        <p>動画1本・1言語につき30,000円（税別・AI翻訳）。あとから言語を足すこともできます。月額には影響しません。</p>
+      </div>
+      <div class="card rv">
+        <div class="card-num">03</div>
+        <h3>安全教育は、母語話者のチェックを</h3>
+        <p>「機械を止めてから」が逆の意味に訳されれば、事故に直結します。安全教育・機械の操作手順・法令に関わる内容には、母語話者によるチェック（別途お見積り）を必ずおすすめしています。AI翻訳の最終確認は、お客様にお願いしています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="section-alt" id="flow">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">SCHEDULE</span>
+      <h2>お打ち合わせから運用開始まで、1〜2か月。</h2>
+      <p class="section-lead">お手元に動画がある場合は、2〜3週間で始められます。新年度や監査の時期に間に合うよう、逆算して組みます。</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><b>STEP 01</b><strong>お問い合わせ・資料送付</strong><p>フォームから資料請求。</p><span class="when">当日〜翌営業日</span></div>
+      <div class="step rv"><b>STEP 02</b><strong>ヒアリング（オンライン）</strong><p>いまの研修の流れ、受講者の人数、記録の残し方を伺います。</p><span class="when">1週目</span></div>
+      <div class="step rv"><b>STEP 03</b><strong>カリキュラム案・お見積り</strong><p>章立てとレッスンの一覧、設問の案、お見積りをご提示。</p><span class="when">2〜3週目</span></div>
+      <div class="step rv"><b>STEP 04</b><strong>撮影</strong><p>現場で撮影。説明役の方は、いつもどおり作業しながらお話しいただくだけ。</p><span class="when">4〜5週目</span></div>
+      <div class="step rv"><b>STEP 05</b><strong>編集・名簿登録・運用開始</strong><p>初稿 → 修正 → 完成。章立てと名簿を設定し、ご案内メールを送信。</p><span class="when">6〜8週目</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT -->
+<section id="support">
+  <div class="container">
+    <div class="section-head center rv">
+      <span class="kicker en">SUPPORT</span>
+      <h2>充実のサポート。</h2>
+      <p class="section-lead">はじめての動画制作でも、はじめての研修のオンライン化でも、迷わず進められるよう伴走します。</p>
+    </div>
+    <div class="support">
+      <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div><h3>無料相談</h3><p>導入前に、いまの研修の流れと困っていることをお聞きし、向いているプランと始め方をご提案します。</p></div>
+      <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M14 3v5h5M8 13h8M8 17h5"/></svg></div><h3>カリキュラムの設計</h3><p>章立て、レッスンの分け方、設問と理解度テストの案まで当社が作成します。</p></div>
+      <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>操作レクチャー</h3><p>運用開始時に管理画面の使い方をオンラインでご説明。担当者が交代した際も再受講できます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR YOU -->
+<section id="foryou">
+  <div class="container">
+    <div class="section-head center rv">
+      <span class="kicker en">FOR YOU</span>
+      <h2>新卒も、中途も、実習生も。<br>同じ研修を、それぞれの入り方で。</h2>
+      <p class="section-lead">入る時期も、日本語の分かり方も、必要な章も違います。章ごとに割り当てを変えられるので、同じ仕組みで3つの層をまとめて回せます。安全教育の記録を残す必要がある企業にも向いています。</p>
+    </div>
+    <div class="cards">
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        <h3>新卒をまとめて迎える</h3>
+        <p>4月に何人も入る企業。会社と仕事の章から順に受けてもらい、誰がどこで止まっているかを一覧で見ながら進められます。集合研修は実技だけに絞れます。</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/></svg></div>
+        <h3>中途が年間を通じて入る</h3>
+        <p>入るたびにベテランが同じ説明をしている企業。入社したその日から始められるので、次の集合研修まで待たせずに済みます。</p>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6M16 4v6"/></svg></div>
+        <h3>外国人実習生を受け入れている</h3>
+        <p>技能実習生・特定技能の方が働いている企業。通訳を手配しなくても、同じ動画に母語の字幕を載せて、同じ内容を伝えられます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-alt" id="faq">
+  <div class="container">
+    <div class="section-head rv">
+      <span class="kicker en">FAQ</span>
+      <h2>よくいただくご質問。</h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>教材が何もなくても導入できますか？</summary><p>はい。手順書しかない、口伝えだけ、という状態からのスタートを想定しています。いまの研修の流れを伺って章立てを作り、現場で撮影します。ベテランの方には、普段どおり作業しながら話していただくだけです。</p></details>
+      <details><summary>どのくらいの期間で始められますか？</summary><p>撮影を伴う場合で1〜2か月、お手元の動画をそのまま使う場合は2〜3週間が目安です。新年度や監査の時期から逆算して組みますので、希望時期をお聞かせください。</p></details>
+      <details><summary>月々の料金はどう決まりますか？</summary><p>基本料と、登録した受講者の人数で決まります。動画の本数・章の数・多言語字幕の言語数は、月額に影響しません。別途、初期費用として専用環境の構築・カリキュラムの設計・動画制作の費用がかかります。金額はプランと本数により異なりますので、お見積りいたします。</p></details>
+      <details><summary>受講者が入れ替わったら、料金はどうなりますか？</summary><p>名簿から外した方は、その月から人数に数えません。新しく入った方はその都度追加できます。年に数人ずつ入る、繁忙期だけ増える、といった動き方に合わせられます。</p></details>
+      <details><summary>説明役の社員が話すのに慣れていません。</summary><p>台本を覚えていただく必要はありません。普段どおり作業していただき、こちらから質問して引き出す形で撮ります。言い直しはいくらでもできます。声が出にくい現場では、あとからナレーションとテロップで補います。</p></details>
+      <details><summary>集合研修は、なくさないといけませんか？</summary><p>いいえ。知識として教える部分を動画に移し、実技や質疑だけを対面で行う、という併用をおすすめしています。動画で下地ができている分、集まる時間を短くできます。</p></details>
+      <details><summary>あとから章やレッスンを増やせますか？</summary><p>はい。章とレッスンの追加・並べ替え・公開／非公開、設問と理解度テストの作成は、管理画面から行えます。並べ替えても、すでに受けた方の記録は消えません。動画そのものの制作は当社にご依頼ください。</p></details>
+      <details><summary>外国人材の研修にも使えますか？</summary><p>はい。オプションで多言語字幕に対応しています。英語・ベトナム語・インドネシア語・ネパール語・ミャンマー語などをAI翻訳で追加でき、受講画面で言語を切り替えられます。動画は1本のままです。費用は動画1本・1言語につき30,000円（税別）。<b>安全教育・機械の操作手順・法令に関わる内容には、母語話者によるチェック（別途お見積り）を必ずおすすめしています。</b>AI翻訳の内容の最終確認は、お客様にお願いしています。</p></details>
+      <details><summary>メールアドレスを持たない社員がいます。</summary><p>社員番号と初期パスワードを発行して、その場で紙などでお渡しできます。初回ログイン時にご本人にパスワードを変えていただきます。メールが届かない方には、督促のメールも送られません。</p></details>
+      <details><summary>受講記録や個人情報の取り扱いは？</summary><p>登録情報と受講記録は、企業ごとに分離した環境に保管しています。通信は暗号化され、閲覧できるのは貴社の管理画面にログインした担当者だけです。データを取り扱う主体は貴社であり、当社は委託を受けて運用します。動画は署名付きのURLでのみ再生でき、リンクを転送しても第三者は見られません。プライバシーポリシーはシステムに組み込み済みです。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container rv">
+    <p class="cta-band-eyebrow"><span>＼</span>まずはお気軽にご相談ください<span>／</span></p>
+    <h2 class="cta-band-title">いまの研修の流れをお聞きして、<br>合う始め方をご提案します。</h2>
+    <p class="cta-band-lead">教材が手順書しかない状態からでも大丈夫です。まずは現状をお聞かせください。</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="#contact">導入について相談する（無料）</a>
+      <a class="btn btn-outline" href="#price">料金の考え方を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head rv" style="margin-bottom:0">
+      <span class="kicker en">CONTACT</span>
+      <h2>お問い合わせ先。</h2>
+      <p class="section-lead">「自社でも使えそう？」「いまの研修に合う？」という段階でも大丈夫です。メールでも、お電話でも承ります。</p>
+    </div>
+    <div class="contact-grid">
+      <div class="rv">
+        <ul class="promise">
+          <li>翌営業日までに、資料をメールでお送りします</li>
+          <li>ご希望の方のみ、30分のオンライン相談を設定します</li>
+          <li>料金は、ヒアリング後にお見積りとして明示します</li>
+        </ul>
+        <div class="contact-photo">
+          <img src="images/contact.jpg" alt="デスクで問い合わせに対応する担当者" loading="lazy" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <div class="contact-box rv">
+        <div class="direct">
+          <p class="direct-lead">資料のご請求・ご相談は、下のフォームからどうぞ。1分で終わります。</p>
+          <a class="direct-form" href="https://docs.google.com/forms/d/e/1FAIpQLSfbqQiIiDAzKtRLbwz20FaaqTry2gQyo3y9G9G0SyDAN5lr_A/viewform" target="_blank" rel="noopener">フォームで相談する（無料）
+            <span>入力は1分ほど。翌営業日までに資料をお送りします</span></a>
+          <p class="direct-or">メール・お電話でも承ります</p>
+          <a class="direct-item" href="mailto:yasuhiro.umeda@urala.co.jp"><small>MAIL</small><b>yasuhiro.umeda@urala.co.jp</b></a>
+          <a class="direct-item tel" href="tel:070-5582-4915"><small>TEL</small><b>070-5582-4915</b></a>
+        </div>
+        <!-- いまはGoogleフォーム（上のボタン）で受けている。このフォームは送信先未接続のまま残す -->
+        <form id="contactForm" hidden onsubmit="event.preventDefault(); alert('送信先を設定すると、このフォームから問い合わせを受け付けられます。');">
+          <div class="form-grid">
+            <div><label>会社名<i>*</i></label><input required name="company" placeholder="株式会社〇〇" autocomplete="organization"></div>
+            <div><label>お名前<i>*</i></label><input required name="name" placeholder="山田 太郎" autocomplete="name"></div>
+            <div><label>メールアドレス<i>*</i></label><input required type="email" name="email" placeholder="example@company.co.jp" autocomplete="email"></div>
+            <div><label>電話番号</label><input name="tel" type="tel" placeholder="000-0000-0000" autocomplete="tel"></div>
+            <div class="full"><label>ご相談内容</label>
+              <select name="type">
+                <option>資料請求</option>
+                <option>導入について相談したい</option>
+                <option>料金について知りたい</option>
+                <option>撮影・動画制作について知りたい</option>
+                <option>多言語字幕について知りたい</option>
+                <option>その他</option>
+              </select>
+            </div>
+            <div class="full"><label>メッセージ</label><textarea name="message" placeholder="受講者の人数、いまの研修の進め方、外国人材の有無、導入希望時期など、分かる範囲でご記入ください。"></textarea></div>
+          </div>
+          <button class="btn btn-primary submit" type="submit">資料請求・お問い合わせを送信する</button>
+          <p class="form-note">送信いただいた情報は、資料送付とご連絡の目的にのみ使用します。</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo">
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z" fill="#fff" stroke="none"/></svg></span>
+          <span>ミテカラ<small style="color:rgba(255,255,255,.5)">社内研修</small></span>
+        </div>
+        <p class="foot-desc">新卒・中途・外国人実習生の研修を動画で。入社の時期がそろわなくても、それぞれのタイミングで。受講の記録は自動で残ります。</p>
+      </div>
+      <nav class="foot-nav">
+        <div>
+          <h3>サービス</h3>
+          <a href="#problem">研修の課題</a>
+          <a href="#solution">変わる3つのこと</a>
+          <a href="#videos">章とレッスンの作り方</a>
+          <a href="#system">仕組み</a>
+          <a href="#lang">多言語字幕</a>
+        </div>
+        <div>
+          <h3>検討する</h3>
+          <a href="#compare">他の方法との比較</a>
+          <a href="#price">料金の考え方</a>
+          <a href="#prep">ご準備いただくもの</a>
+          <a href="#flow">導入の流れ</a>
+        </div>
+        <div>
+          <h3>お問い合わせ</h3>
+          <a href="#faq">よくあるご質問</a>
+          <a href="#contact">導入について相談する</a>
+          <a href="mailto:yasuhiro.umeda@urala.co.jp">yasuhiro.umeda@urala.co.jp</a>
+          <a href="tel:070-5582-4915">TEL 070-5582-4915</a>
+        </div>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <div>株式会社ウララコミュニケーションズ ｜ 〒918-8104 福井県福井市板垣3-1510</div>
+      <div>Powered by URALA Communications ｜ © URALA Communications</div>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta"><a class="btn btn-primary" href="#contact">導入について相談する（無料）</a></div>
+
+<script>
+(function(){
+  var h=document.getElementById('header');
+  var onScroll=function(){h.classList.toggle('scrolled',window.scrollY>10)};
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
