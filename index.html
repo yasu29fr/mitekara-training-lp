@@ -385,8 +385,10 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
 
 /* sticky mobile cta */
-.mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(110%);opacity:0;visibility:hidden;transition:transform .28s ease,opacity .28s ease,visibility .28s}
+.mobile-cta.show{transform:none;opacity:1;visibility:visible}
 .mobile-cta .btn{width:100%}
+@media(prefers-reduced-motion:reduce){.mobile-cta{transition:none}}
 
 @media(max-width:980px){
   .hero-grid,.split,.journey,.banner-grid,.contact-grid{grid-template-columns:1fr}
@@ -1109,6 +1111,18 @@ footer .logo-mark{background:rgba(255,255,255,.12)}
   var h=document.getElementById('header');
   var onScroll=function(){h.classList.toggle('scrolled',window.scrollY>10)};
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  /* 画面下の固定ボタン。
+     ファーストビューではヒーロー内のボタンと上下に並んでしまうので、
+     ヒーローのボタンが画面から外れてから出す。 */
+  var bar=document.querySelector('.mobile-cta');
+  var heroCta=document.querySelector('.hero .ctas');
+  if(bar&&heroCta){
+    var onBar=function(){bar.classList.toggle('show',heroCta.getBoundingClientRect().bottom<0)};
+    window.addEventListener('scroll',onBar,{passive:true});
+    window.addEventListener('resize',onBar,{passive:true});
+    onBar();
+  }
   var els=document.querySelectorAll('.rv');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(entries){
